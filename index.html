@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/4f416bdaf3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+
+                <h1>Hey, I'm <span><br>Aryan Garg</span><br>
+                    <p>Front End Designer </p>based in New Delhi
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    An avid tech enthusiast and aspiring student, I am deeply passionate about exploring the limitless
+                    possibilities of technology. Eager to immerse myself in the ever-evolving world of innovation, I
+                    bring a strong curiosity and drive to understand emerging trends and advancements.
+                    Currently pursuing my education in Computer Science, I am committed to harnessing my technical
+                    skills to contribute meaningfully to the transformative landscapes of the tech industry. My goal is
+                    to merge theoretical knowledge with practical applications, ultimately shaping the future through
+                    creative and impactful technological solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Position of Responsibility</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills" style="font-size: 18px;">
+                        <ul>
+                            <li><span style="font-size: 20px;">Front End</span><br>Designing Front-end Websites with the
+                                help of HTML, CSS and
+                                JavaScript</li>
+                            <li><span style="font-size: 20px;">Software Development</span><br>Building Softwares and
+                                other applications using
+                                Software development techniques and methods like black box testing and white box
+                                testing to test the developed softwares </li>
+                            <li><span style="font-size: 20px;">Editing</span><br>Video Editing using softwares like
+                                ClipChamp by Microsoft and
+                                Canva and <br> has a basic knowledge of Adobe Premier Pro </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span style="font-size: 20px;">2023-Present</span><br><strong>Editor-in-Chief: Social
+                                    Media Cell College of
+                                    Vocational Studies(SMCCVSDU) </strong><br>Brainstormed new ideas to collectively
+                                collaborate
+                                with 30+ societies of College for mutual betterment. Resolved conflicts among team
+                                members,resulting in improved operations within the society</li>
+                            <li><span style="font-size: 20px;">2022-2023</span><br><strong>Head Public Relations: Social
+                                    Media Cell College of
+                                    Vocational Studies(SMCCVSDU)</strong><br>Collaborated with 10+ inter and
+                                intra-college
+                                societies, resulting in a reach of over 35%<br>Coordinated with other departments of the
+                                society for completing the tasks before time</li>
+                            <li><span style="font-size: 20px;">2022-2023</span><br><strong>Operations and Gaming
+                                    department: ENCRYPT The Tech
+                                    Society</strong><br>Organized technology events such as online and offline gaming
+                                and coding quizzes. Secured second place out of ten teams in the gaming
+                                event<br>Conducted Hackathon where 15 teams of other colleges participated and showcased
+                                their ideas on “How increasing demand of technology will help in the betterment of
+                                future” </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>e-Shopify</h2>
+                    <p>This is an E-Commerce website of Electronics items and it is built using Dart and Flutter.
+                        It lets the user to view a product and its details, wishlist a product and add the product to
+                        cart to make the final purchase.</p>
+                    <a href="https://github.com/garg-aryan/E-Commerce-project">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-train"></i>
+                    <h2>Railway Announcement Generator</h2>
+                    <p>This is a railway announcement generator which helps to generate announcements on the railway
+                        stations in both Hindi as well as in English and built using Python and Google-text-to-speech.
+                        It reads the data from a prefilled csv(excel) file and generates the announcements based on that
+                        data.</p>
+                    <a href="https://github.com/garg-aryan/Railway-Announcement-Generator">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="education">
+        <div class="container">
+            <h1 class="sub-title">Education</h1>
+            <div class="edu">
+                <div>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2>2024</h2>
+                    <h3>BSc(Hons) Computer Science</h3>
+                    <p>Currently pursuing a BSc Computer Science Degree from University of Delhi Current CGPA 9.05
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-school"></i>
+                    <h2>2021</h2>
+                    <h3>Senior Secondary</h3>
+                    <p>Completed my Senior Secondary from Silver Bells Public School in Science stream and secured 93.6%
+                        marks</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chalkboard"></i>
+                    <h2>2019</h2>
+                    <h3>High School</h3>
+                    <p>Completed my High School from St. Francis School(ICSE board) and secured 84.8% marks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-at"></i> aryangarg0916@gamil.com</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> +91 7017525044</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_.garg_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/aryan-garg-31572021a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1hyeeXVPSsGHiLd8kJ79pg%3D%3D"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/garg_aryan_"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://github.com/garg-aryan"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Aryan Garg Resume.pdf" download class="btn btn2">View CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024, All rights Reserved. Created by Aryan Garg</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzyGV_BvwqIbxdRnQkC3ON9rbX1J7oivhRVunlTHrAvkqwBMNmv_Zi5gGgqavyK-HZ6/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000);
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
